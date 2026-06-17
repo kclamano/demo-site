@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorem Ipsum Wedding &amp; Coordination — Portfolio Demo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <noscript>
+    <style>
+      body { font-family: Georgia, 'Times New Roman', serif; }
+    </style>
+  </noscript>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="main-nav" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">Lorem Ipsum Bridal</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="scrollToBooking()">Book a Consultation</button>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="#about"    onclick="closeMobileMenu()">About</a>
+  <a href="#packages" onclick="closeMobileMenu()">Packages</a>
+  <a href="#gallery"  onclick="closeMobileMenu()">Gallery</a>
+  <a href="#booking"  onclick="closeMobileMenu()">Contact</a>
+  <button class="btn-primary" onclick="closeMobileMenu(); scrollToBooking();">Book a Consultation</button>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Wedding Planning &amp; Coordination Portfolio Demo</p>
+    <h1 class="hero-title">Lorem Ipsum Dolor.<br /><em>Consectetur Adipiscing.</em></h1>
+    <p class="hero-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="scrollToBooking()">Book a Consultation</button>
+      <a href="#packages" class="btn-ghost">View Packages</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">Scroll</div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-img" role="img" aria-label="Placeholder portrait image"></div>
+        <div class="about-badge" aria-label="10 years of coordination experience">
+          <strong>10+</strong>
+          <span>Years of<br>Experience</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <p class="section-label">The Team Behind The Magic</p>
+        <h2 class="section-heading">Lorem Ipsum Bridal Framework</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="about-signature">— Lorem Ipsum Coordinator</div>
+        <div class="about-stats">
+          <div class="stat"><strong>250+</strong><span>Weddings<br>Planned</span></div>
+          <div class="stat"><strong>100%</strong><span>Stress Free<br>Execution</span></div>
+          <div class="stat"><strong>5★</strong><span>Average<br>Rating</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <div class="divider-line"></div>
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+    <path d="M14 2C14 2 18 8 14 14C10 8 14 2 14 2Z" fill="#C9A882"/>
+    <path d="M14 26C14 26 18 20 14 14C10 20 14 26 14 26Z" fill="#C9A882"/>
+    <path d="M2 14C2 14 8 10 14 14C8 18 2 14 2 14Z" fill="#C9A882"/>
+    <path d="M26 14C26 14 20 10 14 14C20 18 26 14 26 14Z" fill="#C9A882"/>
+    <circle cx="14" cy="14" r="2.5" fill="#A8845E"/>
+  </svg>
+  <div class="divider-line"></div>
+</div>
+
+<section id="packages">
+  <div class="container">
+    <div class="packages-header reveal">
+      <p class="section-label">Investment Framework</p>
+      <h2 class="section-heading">Tailored Services for Every Budget</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Choose the level of support that fits your special day.</p>
+    </div>
+    <div class="packages-grid">
+
+      <div class="package-card reveal reveal-delay-1">
+        <div class="pkg-icon" aria-hidden="true">🌿</div>
+        <div class="pkg-name">Intimate Wedding Package</div>
+        <div class="pkg-tagline">Elopements &amp; micro-weddings</div>
+        <div class="pkg-price"><sup>₱</sup>1,500</div>
+        <div class="pkg-price-note">Demo rate · up to 50 guests</div>
+        <ul class="pkg-features">
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Sed do eiusmod tempor incididunt</li>
+          <li>Personalised wedding timeline</li>
+          <li>Rehearsal framework setup</li>
+        </ul>
+        <button class="btn-select" onclick="selectPackage('Intimate Wedding — ₱1,500')">
+          Select Package
+        </button>
+      </div>
+
+      <div class="package-card featured reveal reveal-delay-2">
+        <div class="pkg-tag">Most Preferred</div>
+        <div class="pkg-icon" aria-hidden="true">✦</div>
+        <div class="pkg-name">Full Wedding Coordination</div>
+        <div class="pkg-tagline">From conceptualization to vows</div>
+        <div class="pkg-price"><sup>₱</sup>4,500</div>
+        <div class="pkg-price-note">Demo quote · 150+ guests</div>
+        <ul class="pkg-features">
+          <li>Unlimited consultations &amp; updates</li>
+          <li>Complete vendor management &amp; setup</li>
+          <li>Venue parsing &amp; layout reviews</li>
+          <li>Detailed master timeline generation</li>
+          <li>Design, theme &amp; styling direction</li>
+          <li>Full day-of deployment management</li>
+        </ul>
+        <button class="btn-select" onclick="selectPackage('Full Planning — ₱4,500')">
+          Select Package
+        </button>
+      </div>
+
+      <div class="package-card reveal reveal-delay-3">
+        <div class="pkg-icon" aria-hidden="true">📋</div>
+        <div class="pkg-name">On-the-Day Coordination</div>
+        <div class="pkg-tagline">Turnkey peace of mind management</div>
+        <div class="pkg-price"><sup>₱</sup>2,500</div>
+        <div class="pkg-price-note">Demo rate · standard guest count</div>
+        <ul class="pkg-features">
+          <li>3 planning sync sessions (6 weeks prior)</li>
+          <li>Final vendor deployment validation</li>
+          <li>Master timeline review &amp; parsing</li>
+          <li>On-site coordination setup team</li>
+          <li>Bridal party logistics management</li>
+          <li>Emergency kit asset checks</li>
+        </ul>
+        <button class="btn-select" onclick="selectPackage('On-the-Day Coordination — ₱2,500')">
+          Select Package
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <div class="divider-line"></div>
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+    <path d="M14 2C14 2 18 8 14 14C10 8 14 2 14 2Z" fill="#C9A882"/>
+    <path d="M14 26C14 26 18 20 14 14C10 20 14 26 14 26Z" fill="#C9A882"/>
+    <path d="M2 14C2 14 8 10 14 14C8 18 2 14 2 14Z" fill="#C9A882"/>
+    <path d="M26 14C26 14 20 10 14 14C20 18 26 14 26 14Z" fill="#C9A882"/>
+    <circle cx="14" cy="14" r="2.5" fill="#A8845E"/>
+  </svg>
+  <div class="divider-line"></div>
+</div>
+
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header reveal">
+      <p class="section-label">Our Work</p>
+      <h2 class="section-heading">Moments We've Had the Honour to Hold</h2>
+    </div>
+    <div class="gallery-grid" role="list" aria-label="Wedding photo gallery">
+      <div class="gallery-item reveal"              role="listitem" aria-label="Elegant wedding ceremony">  <div class="gallery-item-inner g1"></div></div>
+      <div class="gallery-item reveal reveal-delay-1" role="listitem" aria-label="Bridal portrait">           <div class="gallery-item-inner g2"></div></div>
+      <div class="gallery-item reveal reveal-delay-2" role="listitem" aria-label="Reception details">         <div class="gallery-item-inner g3"></div></div>
+      <div class="gallery-item reveal reveal-delay-1" role="listitem" aria-label="Floral arrangements">       <div class="gallery-item-inner g4"></div></div>
+      <div class="gallery-item reveal reveal-delay-2" role="listitem" aria-label="First dance">               <div class="gallery-item-inner g5"></div></div>
+      <div class="gallery-item reveal reveal-delay-3" role="listitem" aria-label="Table setting">             <div class="gallery-item-inner g6"></div></div>
+    </div>
+    <p class="gallery-cta reveal">
+      Follow our journey on Instagram — <a href="#" aria-label="Instagram (placeholder)">@igusername</a>
+    </p>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <div class="divider-line"></div>
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+    <path d="M14 2C14 2 18 8 14 14C10 8 14 2 14 2Z" fill="#C9A882"/>
+    <path d="M14 26C14 26 18 20 14 14C10 20 14 26 14 26Z" fill="#C9A882"/>
+    <path d="M2 14C2 14 8 10 14 14C8 18 2 14 2 14Z" fill="#C9A882"/>
+    <path d="M26 14C26 14 20 10 14 14C20 18 26 14 26 14Z" fill="#C9A882"/>
+    <circle cx="14" cy="14" r="2.5" fill="#A8845E"/>
+  </svg>
+  <div class="divider-line"></div>
+</div>
+
+<section id="booking">
+  <div class="container">
+    <div class="booking-wrapper">
+
+      <div class="booking-info reveal">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-heading">Request a Live Consultation</h2>
+        <p>Fill in the form and we'll be in touch within 24 hours to schedule our first coordination meeting.</p>
+        <div class="booking-details">
+          <div class="booking-detail">
+            <div class="booking-detail-icon" aria-hidden="true">📍</div>
+            <div class="booking-detail-text">
+              <strong>Studio Location</strong>
+              <span>City Center Complex,<br>Metro Manila, Philippines</span>
+            </div>
+          </div>
+          <div class="booking-detail">
+            <div class="booking-detail-icon" aria-hidden="true">📞</div>
+            <div class="booking-detail-text">
+              <strong>Direct Line</strong>
+              <span>+63 9XX XXX XXXX</span>
+            </div>
+          </div>
+          <div class="booking-detail">
+            <div class="booking-detail-icon" aria-hidden="true">✉️</div>
+            <div class="booking-detail-text">
+              <strong>Email Address</strong>
+              <span>hello@trial.com</span>
+            </div>
+          </div>
+          <div class="booking-detail">
+            <div class="booking-detail-icon" aria-hidden="true">🕐</div>
+            <div class="booking-detail-text">
+              <strong>Business Hours</strong>
+              <span>Mon – Fri: 9am – 6pm<br>Sat: 10am – 3pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form reveal reveal-delay-2">
+        <h3 class="form-title">Request a Booking Form</h3>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientName">Full Name *</label>
+              <input type="text" id="clientName" name="clientName"
+                     placeholder="e.g. Jane &amp; John"
+                     autocomplete="name" />
+              <span class="field-error" id="err-name">Please enter your full name.</span>
+            </div>
+            <div class="form-group">
+              <label for="contactNumber">Contact Number *</label>
+              <input type="tel" id="contactNumber" name="contactNumber"
+                     placeholder="09XXXXXXXXX"
+                     autocomplete="tel" />
+              <span class="field-error" id="err-phone">Please enter a valid phone number.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="weddingDate">Target Wedding Date *</label>
+              <input type="date" id="weddingDate" name="weddingDate" />
+              <span class="field-error" id="err-date">Please select a future wedding date.</span>
+            </div>
+            <div class="form-group">
+              <label for="guestCount">Estimated Guest Count</label>
+              <select id="guestCount" name="guestCount">
+                <option value="">— Select range —</option>
+                <option value="Under 50">Under 50</option>
+                <option value="50–100">50–100</option>
+                <option value="100–200">100–200</option>
+                <option value="200+">200+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="chosenPackage">Chosen Coordination Package *</label>
+            <select id="chosenPackage" name="chosenPackage">
+              <option value="">— Select a package —</option>
+              <option value="Intimate Wedding — ₱1,500">Intimate Wedding — ₱1,500</option>
+              <option value="On-the-Day Coordination — ₱2,500">On-the-Day Coordination — ₱2,500</option>
+              <option value="Full Planning — ₱4,500">Full Planning — ₱4,500</option>
+            </select>
+            <span class="field-error" id="err-package">Please choose a package.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes"
+              placeholder="Tell us about your dream wedding — themes, target venue ideas, or questions…"></textarea>
+          </div>
+
+          <div class="form-consent">
+            <input type="checkbox" id="consent" name="consent" />
+            <label for="consent">I agree to be contacted by the coordination team regarding my inquiry. No spam, ever.</label>
+          </div>
+          <span class="field-error" id="err-consent">Please confirm your consent to continue.</span>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="spinner" aria-hidden="true"></span>
+            <span id="submitBtnText">Submit Booking Request</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">Lorem Ipsum Bridal</div>
+    <div class="footer-tagline">Wedding Planning &amp; Coordination Portfolio Demo Framework</div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#booking">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2026 Lorem Ipsum Bridal Co. Built by a talented CS Student.</p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay"
+     role="dialog" aria-modal="true"
+     aria-labelledby="modal-title" aria-describedby="modal-desc">
+  <div class="modal">
+    <div class="modal-icon" aria-hidden="true">🌸</div>
+    <h3 id="modal-title">Booking Request Received!</h3>
+    <p id="modal-desc">
+      Thank you for testing the checkout interface framework. The JavaScript engine has successfully validated your inputs and compiled the server payload array dataset cleanly.
+    </p>
+    <div class="modal-summary" id="modalSummary" aria-label="Booking summary"></div>
+    <button class="modal-close" id="modalClose">Close &amp; Return to Demo</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
