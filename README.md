@@ -2,7 +2,7 @@
 
 A premium, elegant, and minimalist single-page web framework built specifically for modern wedding planners, bridal consultants, and event coordinators. This repository serves as a fully interactive showcase layout for client design consultations and turnkey deployment demos.
 
-🔗 **Live Demo:** [[Insert your GitHub Pages Link Here]](https://kclamano.github.io/demo-site/)
+🔗 **Live Demo:** https://kclamano.github.io/demo-site/
 
 ---
 
